@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+   ">
+   <script>
+        
+    function nightDayHandler(){
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day'
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        } else {
+            target.style.backgroundColor = 'white';
+            targer.style.color = 'black';
+            this.value = 'night';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'blue';
+                i = i + 1;
+        }
+    }
+}
+
+    </script>
+    <script>
+        var cowokers = ['kwon', 'cha', 'hyun'];
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+        <script>
+            var i = 0
+            while (i < cowokers.length){
+                document.write('<li><a href="http://a.com/'+cowokers[i]+'">'+cowokers[i]+'</a></li>');
+                i = i + 1;
+            }
+        </script>
+    </ul>
+    
+</body>
+</html>

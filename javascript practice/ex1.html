@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+     document.querySelector('body').style.backgroundColor = 'black';
+     document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+   ">
+    <script>
+      var cowokers = ['kwon', 'cha', 'hyun'];
+    </script>
+      <h2>Co workers</h2>
+      <ul>
+        <script>
+            var i = 0
+            while (i < cowokers.length){
+                document.write('<li><a href="http://a.com/'+cowokers[i]+'">'+cowokers[i]+'</a></li>');
+                i = i + 1;
+            }
+        </script>
+      </ul>ul?
+   <input id="night_day" type="button" value="night" onclick="
+     if(document.querySelector('#night_day').value==='night'){
+     document.querySelector('body').style.backgroundColor = 'black';
+     document.querySelector('body').style.color = 'white'; 
+     document.querySelector('#night_day').value = 'day' 
+     
+
+     var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = 'powderblue'
+          i = i +1;
+      }
+     } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'night'
+
+    var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = 'blue'
+          i = i +1;
+      }
+    }
+   ">
+   <p>
+    javascript, Since ES2018, the spec requires the return value of 
+    toString() to be the exact same source code as it was declared, 
+    including any whitespace and/or comments — or, if the host doesn't 
+    have the source code available for some reason, requires returning a 
+    native function string. Support for this revised behavior can be found
+     in the
+   </p>
+   <input type="button" value="night" onclick="
+   var target = document.querySelector('body');
+   if(this.value==='night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white'; 
+   this.value = 'day' 
+   } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+  this.value = 'night'
+  }
+ ">
+</body>
+</head>
+</html>
