@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        /* width, height는 적용 안되고 좌우 값적용을 많이 사용 */
+        .inline{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 10px solid red;
+            color: aquamarine;
+        }
+        /* .block{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 10px solid red;
+            color: aquamarine; */
+        /* } */
+        .inline-block{
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 10px solid red;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(246, 239, 239);">
+<!-- inline처럼 자기 콘텐츠만큼만 영역 차지 -->
+    <div style="display:inline" class="inline">
+        <div>box</div> 
+    </div>
+<!-- block은 똑같이 나옴 -->
+    <div style="display: block;" class="block">
+        <div>box</div> 
+    </div>
+<!-- inline처럼 자기 콘텐츠만큼만 영역 차지 but 콘텐츠 영역의 수치가 inline와 다름 block처럼 rendering
+    값을 가지게됨, inline block끼리 4px정도 여백을 가질수 있음 -->
+    <div style="display: inline-block;" class="inline-block">
+        <div>box</div> 
+    </div>
+
+</body>
+</html>

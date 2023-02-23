@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .container{
+            width: 400px;
+            padding: 15px;
+            border: 1px dashed #aaa;
+        }
+
+        .container .box{
+            width: 100px;
+            height: 100px;
+        }
+
+        .container div:nth-child(1){
+            background-color: green;
+        }
+        .container div:nth-child(2){
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>요소를 보통의 흐름에서 벗어나 띄워지게 함</h2>
+    <div class="container">
+        <div style="float:left">Box1</div>
+        <div style="float: left; border: 2px solid red;">Box1</div>
+    </div>
+
+    <h2>주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.</h2>
+    <div class="container">
+        <div style="float: left;">Box1</div>
+        <div style="float: right;">Box1</div>
+        <p>주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.주변 텍스트나 인라인요소가 주위를 감싸는 특징이 있음.</p>
+    </div>
+
+    <h2>대부분의 요소에 display 값은 block으로 변경함.</h2>
+    <div class="container">
+        <div style="" class="box">Box1</div>
+        <span style=" background: skyblue;" class="box">Box1</span>
+    </div> 
+
+</body>
+</html>
