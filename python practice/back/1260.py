@@ -25,7 +25,7 @@ def DFS(graph, root):
         n = s.pop()
         if n not in v:
             v.append(n)
-            if n in graph
+            if n in graph:
                 t = list(set(graph[n])-set(v))
                 t.sort(reverse=True)
                 s += t
