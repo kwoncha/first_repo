@@ -1,5 +1,4 @@
 # 1번 풀이 dfs를 사용한 풀이 예제는 통과하지만 정답은 x
-# 
 def dfs(i):
     co[i].append(1)
     visited[i] = True

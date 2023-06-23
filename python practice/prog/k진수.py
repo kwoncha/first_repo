@@ -47,6 +47,6 @@ def solution(n, k):
         for j in range(2,int(int(i)**0.5)+1) :
             if int(i) % j == 0 :
                 tf = False
-                break;
+                break
         if tf == True : count += 1
     return count

@@ -2,9 +2,10 @@
 def check(x):
 # 이전 행에서 놓았던 모든 Queen들을 확인
     for i in range(x):
-    # 위쪽 혹은 대각선을 확인
+    # 위쪽을 확인
         if row[x] == row[i]:
             return False
+        #대각선을 확인
         if abs(row[x] - row[i]) == x - i:
             return False
     return True
