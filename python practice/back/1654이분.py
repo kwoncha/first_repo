@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-arr = list(map(int, input().split()))
+arr = [int(input()) for _ in range(n)]
 arr.sort(reverse=True)
 
 start = 1
@@ -13,8 +13,7 @@ while start <= end:
     mid = (start + end) // 2
     count = 0
     for i in range(len(arr)):
-        if arr[i] > mid:
-            count += arr[i] - mid
+        count += arr[i] // mid
 
     if count >= m:
         result = mid
