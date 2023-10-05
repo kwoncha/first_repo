@@ -2,24 +2,25 @@ import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
-arr = list(map(int, input().split()))
-arr.sort(reverse=True)
+answer = [int(input()) for i in range(n)]
+answer.sort()
 
 start = 1
-end = sum(arr)
+end = answer[-1] - answer[0]
 result = 0
 
 while start <= end:
     mid = (start + end) // 2
-    count = 0
-    for i in range(len(arr)):
-        if arr[i] > mid:
-            count += arr[i] - mid
-
+    value = answer[0]
+    count = 1 
+    for i in range(len(answer)):
+        if answer[i] >= value + mid:
+            value = answer[i]
+            count += 1
     if count >= m:
-        result = mid
         start = mid + 1
+        result = mid
     else:
         end = mid - 1
-
+        
 print(result)
